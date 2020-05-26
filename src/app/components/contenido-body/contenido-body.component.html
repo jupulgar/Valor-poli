@@ -1,0 +1,20 @@
+
+<h2  >Actualizar</h2>
+<form class="forma">
+    <div class="form-group">
+        <input type="text" name="name" class="inpu" [(ngModel)]="todos.name" placeholder="Titulo del contenido" >
+    </div>
+    <div >
+        <textarea  name="username" class="inpu" placeholder="Descripcion" [(ngModel)]="todos.username" cols="24" rows="2"></textarea>
+    </div>
+
+<hr>
+
+
+
+
+      <button (click)="actualizar(todos)" class="btn btn-success " >
+        Guardar
+    </button>
+
+</form>

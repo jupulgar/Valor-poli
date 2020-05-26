@@ -1,0 +1,18 @@
+h2{
+    margin-top: 5%; 
+    font-size: 50px;
+    text-align: center;
+}
+.forma{
+    text-align: center;
+    color: black;
+    font-size:40px;
+}
+.inpu{
+    margin-top: 10px;
+    text-align: center;
+}
+.select{
+    text-align: center;
+    font-size:20px;
+}

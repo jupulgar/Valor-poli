@@ -1,0 +1,35 @@
+
+<h2 >Crear Quiz</h2>
+<form class="forma">
+    <div>
+        <input type="text" name="titulo" class="inpu"  [(ngModel)]="quiz.titulo" placeholder="Titulo del Quiz" >
+    </div>
+    <div >
+        <textarea class="inpu" name="descripcion" placeholder="Descripcion" [(ngModel)]="quiz.descripcion" cols="24" rows="2"></textarea>
+    </div>
+    
+    <div class="form-group">
+        <select  [(ngModel)]="quiz.estado"  name="estado" class="form-control" style="width: 15%; position: relative; left: 43%; font-size: 30px; height: 15%;"  >
+        <option >Estado</option>
+        <option value=' 0'>Activo</option>
+        <option value='1'>Inactivo</option>
+        </select>
+      </div>
+     
+    
+<!--     
+    <div>
+        <select class="inpu"  name="peel" [(ngModel)]="peel" >
+            <option  *ngFor="let peel of peel" [value]="peel.quiz_id_quiz" >
+            {{peel.modulo.quiz_id_quiz}}
+             {{peel.idQuiz == 5 ? 'Cinco': 'Dos'}} 
+            </option>
+            
+        </select>
+    </div> -->
+
+    <button (click)="SaveQuiz()"  class="btn btn-success " >
+        Guardar
+    </button>
+
+</form>

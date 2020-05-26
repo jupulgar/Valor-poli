@@ -1,0 +1,20 @@
+
+<h2 >Crear Contenido</h2>
+<form class="forma">
+    <div>
+        <input type="text" name="name" class="inpu"  [(ngModel)]="categoria.name" placeholder="Titulo del contenido" >
+    </div>
+    <div >
+        <textarea class="inpu" name="username" placeholder="Descripcion" [(ngModel)]="categoria.username" cols="24" rows="2"></textarea>
+    </div>
+    <!-- <select [(ngModel)]="peel" style="font-size: 50%;">
+        <option *ngFor="let peel of peel" [value]="peel.id" >
+            {{peel.title}}
+        </option>
+        
+    </select> -->
+    <button (click)="edit ? updateCategoria() : SaveCategoria()" class="btn btn-success " >
+        Guardar
+    </button>
+
+</form>

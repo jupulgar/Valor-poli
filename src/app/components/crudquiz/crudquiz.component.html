@@ -1,0 +1,33 @@
+<h1 class="title">Lista de Quiz</h1>
+
+<div class="posicion">
+    <table class="table-fill"   >
+        <thead >
+            <tr >
+            <th>Id</th>
+            <th>Titulo</th>
+            <th>Descripcion</th>
+            <th>Estado</th>            
+            <th>Editar</th>      
+            <th>Eliminar</th>                 
+            </tr>
+        </thead>
+        <tbody  >
+             <tr *ngFor="let quizz of quizz"  >
+                <td >{{quizz.idQuiz}}</td> 
+                <td >{{quizz.titulo}}</td> 
+                <td >{{quizz.descripcion}}</td> 
+                <td >{{quizz.estado }}</td>
+                <td ><button   (click)="editar(quizz)"  class="btn btn-warning" >Editar</button></td> 
+                <td ><button (click)="deleteQuiz(quizz.idQuiz)" class="btn btn-danger" >Eliminar</button></td> 
+                
+            </tr>
+        </tbody>
+    </table>
+    <!-- <select [(ngModel)]="peel">
+        <option *ngFor="let peel of peel" [value]="peel.id" >
+            {{peel.title}}
+        </option>
+        
+    </select> -->
+</div>

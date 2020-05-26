@@ -1,0 +1,17 @@
+
+
+<h2 >Actualizar</h2>
+<form class="forma">
+    <div>
+        <input type="text" name="titulo" class="inpu"  [(ngModel)]="quiz.titulo" placeholder="Titulo del Quiz" >
+    </div>
+    <div >
+        <textarea class="inpu" name="descripcion" placeholder="Descripcion" [(ngModel)]="quiz.descripcion" cols="24" rows="2"></textarea>
+    </div>
+    <hr>
+
+    <button (click)="actualizar(quiz)"  class="btn btn-success" >
+        Guardar
+    </button>
+
+</form>
