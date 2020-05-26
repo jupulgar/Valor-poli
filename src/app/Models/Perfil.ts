@@ -33,23 +33,24 @@ export interface Misesionn{
 }
 export interface Persona{
     id: number;
-    name: string;
+    nombre: string;
     username: string;
-    email: String;
-    address: string;
-    phone: string;
-    companyname: string;
+    email: string;
+    ocupacion: string;
+    nationalID: string;
+    descripcion: string;
+    password: string;
 
 }
 export class Personas{
     id: number;
-    name: string;
+    nombre: string;
     username: string;
-    email: String;
-    address: string;
-    phone: string;
-    companyname: string;
-    
+    email: string;
+    ocupacion: string;
+    nationalID: string;
+    descripcion: string;
+    password: string;
 
 }
 

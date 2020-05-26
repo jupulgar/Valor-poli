@@ -10,7 +10,7 @@ export class ServiceService {
   constructor(private httpClient: HttpClient) { }
 
   obtenerTodasCartas(): Observable<any>{
-    return this.httpClient.get("https://jsonplaceholder.typicode.com/posts");
+    return this.httpClient.get("http://localhost:8090/api/modulo/listar");
   }
 
   eliminarCarta(id): Observable<any>{

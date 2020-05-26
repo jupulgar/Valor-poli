@@ -61,7 +61,7 @@ validaLogin(){
   return;
 }
 regitrarPersona(persona:Persona){
-  return this.http.post<Persona>('https://jsonplaceholder.typicode.com/users/', persona);
+  return this.http.post<Persona>('http://localhost:8090/api/usuario/crear', persona);
 }
 
 }

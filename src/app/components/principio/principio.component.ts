@@ -19,12 +19,13 @@ export class PrincipioComponent implements OnInit {
 
   newUsr: Persona = {
     id: 0,
-    name: '',
+    nombre: '',
     username: '',
     email: '',
-    address: '',
-    phone: '',
-    companyname: ''
+    ocupacion: '',
+    nationalID: '',
+    descripcion: '',
+    password: '' 
   };
 
   constructor(private perfilService: PerfilService, private router:Router) { }
@@ -32,15 +33,15 @@ export class PrincipioComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  registro(cosa){
-    delete cosa.id;
+  registro(){
+    delete this.newUsr.id;
 
-    this.perfilService.regitrarPersona(cosa)
+    this.perfilService.regitrarPersona(this.newUsr)
     .subscribe(
       resultado => {
         console.log(resultado);
         alert("Usuario insertado");
-        this.router.navigate(['contenido/inicio']);
+        this.router.navigate(['index']);
 
     }, 
     error => console.error(error)

@@ -11,17 +11,17 @@
     </div>
   </div> -->
 <h2 class="titulo">¿Que aprendermos Hoy?</h2>
-<h3 class="titulo2">Selecciona la tearjeta que sea de tu interes</h3>
+<h3 class="titulo2">Selecciona la tarjeta que sea de tu interes</h3>
 
 <body>
    
     <div class="row">
         <div class="column" *ngFor="let item of cartas">
             <div class="card">
-                <h3>{{item.title}}</h3>
-                <p>Post #{{item.id}}</p>
-                <p>By user Nº{{item.userId}}</p>
-                <p>{{item.body}}</p>
+                <h3>{{item.titulo}}</h3>
+                <p>Post #{{item.idModulo}}</p>
+                <!-- <p>By user Nº{{item.createAt}}</p> -->
+                <p>{{item.descripcion}}</p>
             </div>
         </div>       
     </div>

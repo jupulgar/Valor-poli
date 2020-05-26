@@ -17,11 +17,11 @@ import { PrincipioComponent } from './components/principio/principio.component';
 const routes: Routes = [
     {
       path: '',
-      redirectTo: '',
+      redirectTo: 'index',
       pathMatch: 'full'
     },
     {
-      path:'',
+      path:'index',
       component: PrincipioComponent
     },
     {

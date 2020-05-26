@@ -229,7 +229,7 @@
           <li><a href="#myPage">INICIO</a></li>
           <li><a href="" data-toggle="modal" data-target="#myModal">INICIAR SESION</a></li>
           <li><a href="#tour">REGISTRESE</a></li>
-          <li><a href="#contact">¿QUI&Eacute;NES SOMOS?</a></li>
+          <!-- <li><a href="#contact">¿QUI&Eacute;NES SOMOS?</a></li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">M&Aacute;S
               <span class="caret"></span></a>
@@ -238,7 +238,7 @@
               <li><a href="#">Extras</a></li>
               <li><a href="#">Media</a></li>
             </ul>
-          </li>
+          </li> -->
           <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
         </ul>
       </div>
@@ -266,7 +266,9 @@
       </div>
 
       <div class="item">
-        <img src="https://static.wixstatic.com/media/c16e35_0f30ec82b3784ccca628c83d5f3557fc~mv2_d_5497_3696_s_4_2.jpg/v1/fill/w_1900,h_1277,al_c,q_90,usm_0.66_1.00_0.01/c16e35_0f30ec82b3784ccca628c83d5f3557fc~mv2_d_5497_3696_s_4_2.webp" alt="poli_medellin" width="1200" height="700" style=" filter: none;">
+        <img
+          src="https://static.wixstatic.com/media/c16e35_0f30ec82b3784ccca628c83d5f3557fc~mv2_d_5497_3696_s_4_2.jpg/v1/fill/w_1900,h_1277,al_c,q_90,usm_0.66_1.00_0.01/c16e35_0f30ec82b3784ccca628c83d5f3557fc~mv2_d_5497_3696_s_4_2.webp"
+          alt="poli_medellin" width="1200" height="700" style=" filter: none;">
         <div class="carousel-caption">
           <h3>Valor Compartido</h3>
           <p></p>
@@ -274,7 +276,8 @@
       </div>
 
       <div class="item">
-        <img src="https://www.cesa.edu.co/wp-content/uploads/2018/09/Bienestar_fachada-1.jpg" alt="convenio_cesa" width="1200" height="700" style=" filter: none;">
+        <img src="https://www.cesa.edu.co/wp-content/uploads/2018/09/Bienestar_fachada-1.jpg" alt="convenio_cesa"
+          width="1200" height="700" style=" filter: none;">
         <div class="carousel-caption">
           <h3>Aprendizaje</h3>
           <p></p>
@@ -297,13 +300,17 @@
   <div id="band" class="container text-center">
     <h3>Valor poli</h3>
     <p><em>Porque aprender, nunca fue tan facil!</em></p>
-    <p>Valor poli, es una aplicaci&oacute;n creada con el fin de blablablabla Sostenibilidad</p>
+    <p>Valor poli, es una aplicaci&oacute;n creada un Sistema de información que permita la creación de contenido de
+      aprendizaje con un material evaluativo del mismo, los cuales contribuyan a la expansión de conocimientos
+      interdisciplinarios o transversales.</p>
     <br>
     <div class="row">
       <div class="col-sm-4">
         <!-- <p class="text-center"><strong>Name</strong></p><br> -->
         <a href="#demo" data-toggle="collapse">
-          <img src="https://directorioicc.gov.co/sites/default/files/espacio-audiovisual-politecnico-grancolombiano/2-03-politecnico_grancolombiano-_010-_camino-_julio_barrera_result_1.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+          <img
+            src="https://directorioicc.gov.co/sites/default/files/espacio-audiovisual-politecnico-grancolombiano/2-03-politecnico_grancolombiano-_010-_camino-_julio_barrera_result_1.jpg"
+            class="img-circle person" alt="Random Name" width="255" height="255">
         </a>
         <div id="demo" class="collapse">
           <p>Guitarist and Lead Vocalist</p>
@@ -314,8 +321,8 @@
       <div class="col-sm-4">
         <!-- <p class="text-center"><strong>Name</strong></p><br> -->
         <a href="#demo2" data-toggle="collapse">
-          <img src="https://static.iris.net.co/semana/upload/images/2017/10/2/542428_1.jpg"
-            class="img-circle person" alt="Random Name" width="255" height="255">
+          <img src="https://static.iris.net.co/semana/upload/images/2017/10/2/542428_1.jpg" class="img-circle person"
+            alt="Random Name" width="255" height="255">
         </a>
         <div id="demo2" class="collapse">
           <p>Drummer</p>
@@ -324,10 +331,10 @@
         </div>
       </div>
       <div class="col-sm-4">
-        <p class="text-center"><strong>Name</strong></p><br>
+        <!-- <p class="text-center"><strong>Name</strong></p><br> -->
         <!-- <a href="#demo3" data-toggle="collapse"> -->
-          <img src="https://imagenes.universia.net/gc/net/images/educacion/c/ce/ces/cesa-noticia-1427387315963.jpg" class="img-circle person" alt="Random Name" width="255"
-            height="255">
+        <img src="https://imagenes.universia.net/gc/net/images/educacion/c/ce/ces/cesa-noticia-1427387315963.jpg"
+          class="img-circle person" alt="Random Name" width="255" height="255">
         <!-- </a> -->
         <div id="demo3" class="collapse">
           <p>Bass player</p>
@@ -350,8 +357,9 @@
                 <label for="nombres">
                   <h3 style="color: black;">Nombres</h3>
                 </label>
-                <input type="text" class="form-control" name="nombres" id="nombres" [(ngModel)]="newUsr.name"
-                  title="Ingrese sus nombres" placeholder="Ingrese sus nombres" required>
+                <input type="text" class="form-control" name="nombres" id="nombres" [(ngModel)]="newUsr.nombre"
+                  [ngModelOptions]="{standalone: true}" title="Ingrese sus nombres" placeholder="Ingrese sus nombres"
+                  required>
               </div>
 
               <div class="col-xs-6">
@@ -367,15 +375,15 @@
                   <h3 style="color: black;">Identificaci&oacute;n</h3>
                 </label>
                 <input type="text" class="form-control" name="mobile" id="mobile" placeholder="enter mobile number"
-                  title="enter your mobile number if any." [(ngModel)]="newUsr.phone" required>
+                  title="enter your mobile number if any." [(ngModel)]="newUsr.nationalID" required>
               </div>
 
               <div class="col-xs-6">
                 <label for="phone">
                   <h3 style="color: black;">Ocupaci&oacute;n</h3>
                 </label>
-                <input type="text" class="form-control" name="phone" id="phone" value="" required [(ngModel)]="newUsr.username" 
-                   placeholder="enter phone" title="enter your phone number if any.">
+                <input type="text" class="form-control" name="phone" id="phone" value="" required
+                  [(ngModel)]="newUsr.ocupacion" placeholder="enter phone" title="enter your phone number if any.">
               </div>
 
               <div class="col-xs-6">
@@ -387,9 +395,23 @@
               </div>
               <div class="col-xs-6">
                 <label for="descrip">
+                  <h3 style="color: black;">Usuario</h3>
+                </label>
+                <input type="user" class="form-control" name="user" id="user" value=""
+                  [(ngModel)]="newUsr.username" placeholder="Ingrese su nombre de usuario" title="" required>
+              </div>
+              <div class="col-xs-6">
+                <label for="descrip">
+                  <h3 style="color: black;">Contraseña</h3>
+                </label>
+                <input type="password" class="form-control" name="psswd" id="psswd" value=""
+                  [(ngModel)]="newUsr.password" placeholder="Ingrese su contraseña" title="" required>
+              </div>
+              <div class="col-xs-6">
+                <label for="descrip">
                   <h3 style="color: black;">Descripci&oacute;n</h3>
                 </label>
-                <textarea class="form-control" rows="5" id="descrip" required [(ngModel)]="newUsr.companyname"
+                <textarea class="form-control" rows="5" id="descripcion" name="descripcion" [(ngModel)]="newUsr.descripcion" required
                   placeholder="Hablanos un poco de ti. ¿Cu&aacute;l es tu profesi&oacute;n? ¿A qu&eacute; te dedicas?"></textarea>
               </div>
 
@@ -398,7 +420,7 @@
                 <h3 style="color: black;">Selecciona tus intereses</h3>
                 <app-gustos style="color: black;"></app-gustos>
               </div> -->
-              
+
               <div class="col-xs-12">
                 <br>
                 <button type="submit" class="btn" (click)="registro()">Continuar</button>
@@ -427,11 +449,13 @@
             <form role="form">
               <div class="form-group">
                 <label for="correo"><span class="glyphicon glyphicon-envelope"></span> Email</label>
-                <input type="email" class="form-control" id="correo" [(ngModel)]="validLogin.username" placeholder="Example@email.com">
+                <input type="email" class="form-control" id="correo" [(ngModel)]="validLogin.username"
+                  [ngModelOptions]="{standalone: true}" placeholder="Example@email.com">
               </div>
               <div class="form-group">
                 <label for="pswd"><span class="glyphicon glyphicon-asterisk"></span> Contraseña</label>
-                <input type="password" class="form-control" id="pswd"  [(ngModel)]="validLogin.pswd" placeholder="Ingrese su contraseña">
+                <input type="password" class="form-control" id="pswd" [(ngModel)]="validLogin.pswd"
+                  [ngModelOptions]="{standalone: true}" placeholder="Ingrese su contraseña">
               </div>
               <button type="submit" class="btn btn-block" (click)="Login()">Iniciar
                 <span class="glyphicon glyphicon-ok"></span>
@@ -512,7 +536,8 @@
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a><br><br>
 
-    <a href="https://poli.edu.co"> <img src="https://www.poli.edu.co/sites/default/files/logos/logo_poli_nuevo_footer-ver5.png"> </a>
+    <a href="https://poli.edu.co"> <img
+        src="https://www.poli.edu.co/sites/default/files/logos/logo_poli_nuevo_footer-ver5.png"> </a>
     <p><br>Institución Universitaria Politécnico Grancolombiano - <br>
       IES sujeta a inspección y vigilancia por el Ministerio de Educación nacional mediante <br>
       Resolución No. 19349 de 1980-11-04</p>
