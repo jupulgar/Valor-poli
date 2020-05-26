@@ -19,6 +19,12 @@ import { CrudquizComponent } from './components/crudquiz/crudquiz.component';
 import { CrearComponent } from './components/crudquiz/crear/crear.component';
 import { CrudpreguntaComponent } from './components/crudpregunta/crudpregunta.component';
 import { ActualizarComponent } from './components/crudquiz/actualizar/actualizar.component';
+import { PerfContactComponent } from './components/perfil-contact/perfil-contact.component';
+import { PrincipioComponent } from './components/principio/principio.component';
+// import { GustosComponent } from './components/gustos/gustos.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { PerfilActComponent } from './components/perfil-act/perfil-act.component';
+import { PerfilListComponent } from './components/perfil-list/perfil-list.component';
 
 
 
@@ -36,7 +42,13 @@ import { ActualizarComponent } from './components/crudquiz/actualizar/actualizar
     CrudquizComponent,
     CrearComponent,
     CrudpreguntaComponent,
-    ActualizarComponent
+    ActualizarComponent,
+    PerfContactComponent,
+    PrincipioComponent,
+    // GustosComponent,
+    PerfilComponent,
+    PerfilActComponent,
+    PerfilListComponent
   ],
   imports: [
     BrowserModule,

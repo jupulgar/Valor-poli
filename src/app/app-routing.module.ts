@@ -9,12 +9,20 @@ import { CrudquizComponent } from './components/crudquiz/crudquiz.component';
 import { CrearComponent} from './components/crudquiz/crear/crear.component';
 import { CrudpreguntaComponent} from './components/crudpregunta/crudpregunta.component';
 import { ActualizarComponent} from './components/crudquiz/actualizar/actualizar.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { PerfilActComponent } from './components/perfil-act/perfil-act.component';
+import { PerfContactComponent } from './components/perfil-contact/perfil-contact.component';
+import { PrincipioComponent } from './components/principio/principio.component';
 //import { NavegationComponent } from './components/navegation/navegation.component';
 const routes: Routes = [
     {
       path: '',
-      redirectTo: '/contenido/inicio',
+      redirectTo: '',
       pathMatch: 'full'
+    },
+    {
+      path:'',
+      component: PrincipioComponent
     },
     {
       path: 'contenido/inicioprincipal',
@@ -56,7 +64,21 @@ const routes: Routes = [
     {
       path: 'pregunta/list',
       component: CrudpreguntaComponent
+    },
+    {
+      path: 'me',
+      component : PerfilComponent
+    },
+    {
+      path: 'me/edit/:id',
+      component : PerfilActComponent
+    },
+    {
+      path: 'usuario/:id',
+      component: PerfContactComponent
+     
     }
+
 ];
 
 @NgModule({
