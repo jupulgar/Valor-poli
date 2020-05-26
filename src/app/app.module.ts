@@ -19,6 +19,7 @@ import { CrudquizComponent } from './components/crudquiz/crudquiz.component';
 import { CrearComponent } from './components/crudquiz/crear/crear.component';
 import { CrudpreguntaComponent } from './components/crudpregunta/crudpregunta.component';
 import { ActualizarComponent } from './components/crudquiz/actualizar/actualizar.component';
+import { CrudrespuestaComponent } from './components/crudrespuesta/crudrespuesta.component';
 
 
 
@@ -36,7 +37,8 @@ import { ActualizarComponent } from './components/crudquiz/actualizar/actualizar
     CrudquizComponent,
     CrearComponent,
     CrudpreguntaComponent,
-    ActualizarComponent
+    ActualizarComponent,
+    CrudrespuestaComponent
   ],
   imports: [
     BrowserModule,
