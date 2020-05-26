@@ -13,10 +13,21 @@ import { ActualizarComponent} from './components/crudquiz/actualizar/actualizar.
 const routes: Routes = [
     {
       path: '',
+<<<<<<< Updated upstream
       redirectTo: '/contenido/inicio',
       pathMatch: 'full'
     },
     {
+=======
+      redirectTo: 'principal',
+      pathMatch: 'full'
+    },
+    {
+      path:'principal',
+      component: PrincipioComponent
+    },
+    {
+>>>>>>> Stashed changes
       path: 'contenido/inicioprincipal',
       component: PaginaprincipalComponent
     },
