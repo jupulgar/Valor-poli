@@ -1,0 +1,36 @@
+
+<body>
+    <app-navegation></app-navegation>
+    <h2 >Crear Pregunta</h2>
+    <hr>
+    <form class="forma">
+        <div>
+            <input type="text" name="titulo" class="inpu"  [(ngModel)]="pregunta.titulo" placeholder="Titulo del Quiz" >
+        </div>
+        
+        
+        <div class="form-group">
+            <label for="estado" style="color: white;">Tipo de pregunta</label>
+            <select  [(ngModel)]="pregunta.tipoPregunta"  name="estado" class="form-control" style="width: 15%; position: relative; left: 43%; font-size: 30px; height: 15%;"  >
+            <option value=' 0'>Cerrada</option>
+            
+            </select>
+          </div>
+         
+        
+        
+        <div>
+            <select class="inpu"  name="idQuiz" [(ngModel)]="pregunta.idQuiz" >
+                <option  *ngFor="let quizz of quizz" [value]="quizz.idQuiz" >
+                {{quizz.titulo}} 
+                </option>
+                
+            </select>
+        </div>
+    
+        <button (click)="SavePregunta()"  class="btn btn-success " style="font-size: 23px;" >
+            Guardar
+        </button>
+    
+    </form>
+    </body>

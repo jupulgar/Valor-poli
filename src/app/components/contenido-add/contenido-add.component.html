@@ -1,5 +1,8 @@
-
+<body>
+    
+<app-navegation></app-navegation>
 <h2 >Crear Contenido</h2>
+<hr>
 <form class="forma">
     <div>
         <input type="text" name="name" class="inpu"  [(ngModel)]="categoria.name" placeholder="Titulo del contenido" >
@@ -13,8 +16,9 @@
         </option>
         
     </select> -->
-    <button (click)="edit ? updateCategoria() : SaveCategoria()" class="btn btn-success " >
+    <button (click)="edit ? updateCategoria() : SaveCategoria()" class="btn btn-success " style="font-size: 30px;" >
         Guardar
     </button>
 
 </form>
+</body>

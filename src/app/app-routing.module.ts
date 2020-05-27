@@ -13,6 +13,7 @@ import { PerfilComponent } from './components/perfil/perfil.component';
 import { PerfilActComponent } from './components/perfil-act/perfil-act.component';
 import { PerfContactComponent } from './components/perfil-contact/perfil-contact.component';
 import { PrincipioComponent } from './components/principio/principio.component';
+import {CrearpComponent} from './components/crudpregunta/crearp/crearp.component';
 //import { NavegationComponent } from './components/navegation/navegation.component';
 const routes: Routes = [
     {
@@ -64,6 +65,10 @@ const routes: Routes = [
     {
       path: 'pregunta/list',
       component: CrudpreguntaComponent
+    },
+    {
+      path: 'pregunta/crear',
+      component: CrearpComponent
     },
     {
       path: 'me',

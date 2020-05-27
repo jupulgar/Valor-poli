@@ -25,6 +25,7 @@ import { PrincipioComponent } from './components/principio/principio.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { PerfilActComponent } from './components/perfil-act/perfil-act.component';
 import { PerfilListComponent } from './components/perfil-list/perfil-list.component';
+import { CrearpComponent } from './components/crudpregunta/crearp/crearp.component';
 
 
 
@@ -48,7 +49,8 @@ import { PerfilListComponent } from './components/perfil-list/perfil-list.compon
     // GustosComponent,
     PerfilComponent,
     PerfilActComponent,
-    PerfilListComponent
+    PerfilListComponent,
+    CrearpComponent
   ],
   imports: [
     BrowserModule,

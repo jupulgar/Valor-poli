@@ -50,6 +50,7 @@ export class PrincipioComponent implements OnInit {
 
   Login(){
     this.router.navigate(['contenido/inicio']); 
+    this.router.navigate(['contenido/inicio']); 
   }
 
 }
