@@ -1,13 +1,15 @@
+<body>
+<app-navegation></app-navegation>
 <h1 class="title">Lista de Preguntas</h1>
-
+<hr>
 <div class="posicion">
     <table class="table-fill"   >
         <thead >
             <tr >
             
             <th>tipo de pregunta</th>      
-            <th>titulo</th>   
-            <th>id quiz</th>        
+            <th>Pregunta</th>   
+            <th>Titulo del  quiz</th>        
             <th>Editar</th>      
             <th>Eliminar</th>                 
             </tr>
@@ -17,7 +19,7 @@
                
                 <td >{{pregunta.tipoPregunta}}</td>
                 <td >{{pregunta.titulo}}</td>
-                <td >{{quizz.descripcion}}</td>
+                <td >{{pregunta.quizIdQuiz.titulo}}</td>
                 <td ><button  class="btn btn-warning" >Editar</button></td> 
                 <td ><button class="btn btn-danger" >Eliminar</button></td> 
                 
@@ -31,3 +33,4 @@
         
     </select> -->
 </div>
+</body>

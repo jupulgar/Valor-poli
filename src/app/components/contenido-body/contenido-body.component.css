@@ -1,12 +1,20 @@
+body {
+    margin-top: 3%; 
+    background-image: url(src\img\im.jpeg) ;
+    position:absolute; 
+     width:100%; 
+     height:93%;
+  }
 h2{
     text-align: center;
-    font-size: 40px;
-    margin-top: 5%;
+    font-size: 60px;
+    margin-top: 2%;
+    color: white;
 }
 .forma{
     text-align: center;
     color: black;
-    font-size:40px;
+    font-size:45px;
 }
 .inpu{
     margin-top: 10px;

@@ -23,12 +23,14 @@ export class Quiz {
     modulo_id_modulo?: number;
     titulo?: String;
 }
-export interface Pregunta{
+export class Pregunta{
     
-    id_pregunta?: number;
-    quiz_id_quiz?:number;
+    idPregunta?: number;
+
+    idQuiz?: number;
     tipoPregunta?: String;
     titulo?: string;
+    
 }
 
 

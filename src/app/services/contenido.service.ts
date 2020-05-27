@@ -44,11 +44,11 @@ export class ContenidoService {
   }
 
 
-  addQuiz(id: any) {
-    let json = JSON.stringify(id);
-    let headers = new HttpHeaders().set('content-Type', 'application/json');
-    return this.http.post("http://localhost:8080/api/quiz", json ,{ headers : headers});
-  }
+  // addQuiz(id: any) {
+  //   let json = JSON.stringify(id);
+  //   let headers = new HttpHeaders().set('content-Type', 'application/json');
+  //   return this.http.post("http://localhost:8080/api/quiz", json ,{ headers : headers});
+  // }
   gettodosquiz(): Observable<any> {
     const path = `${this.api}/quiz/lista/`;
     return this.http.get(path);
@@ -81,6 +81,11 @@ export class ContenidoService {
   gettodospre(): Observable<any> {
     const path = `${this.api}/pregunta/lista/`;
     return this.http.get(path);
+  }
+
+  createpregunta(pregunta:Pregunta){
+    const path = `${this.api}/pregunta/crear/`;
+    return this.http.post(path,pregunta);
   }
 
 

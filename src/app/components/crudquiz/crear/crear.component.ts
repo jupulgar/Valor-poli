@@ -20,11 +20,11 @@ export class CrearComponent implements OnInit {
   constructor(private contenidoService: ContenidoService,private router:Router,private activedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.contenidoService.getpregunta()
-    .subscribe(data=>{
-      this.peel=data;
+    // this.contenidoService.getpregunta()
+    // .subscribe(data=>{
+    //   this.peel=data;
       
-    })
+    // })
     
     }
 
